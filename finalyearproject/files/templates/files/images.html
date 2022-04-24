@@ -1,0 +1,8 @@
+{% for image in images %}
+<div>
+   {{ image.name }}
+</div>
+<div>
+   <img src="{{ image.image.url }}" >
+</div>
+{% endfor %}
