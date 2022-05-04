@@ -28,22 +28,22 @@
     pip3 install pipenv
     ```
 
-5. Activate a new virtual environment
+5. Navigate to the project folder
+    ```sh
+    cd finalyearproject
+    ```
+
+6. Activate a new virtual environment
     ```sh
    pipenv shell
    ```
 
-5. Install required dependencies 
+7. Install required dependencies 
     ```sh
    pipenv install
    ```
    
-6. Navigate to the application folder
-    ```sh
-    cd finalyearproject
-    ```
-   
-7. Start the applciation
+8. Start the applciation
     ```sh
     python3 manage.py runserver
     ```
