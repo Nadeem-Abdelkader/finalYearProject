@@ -19,28 +19,24 @@
     cd finalYearProject
     ```
 
-4. Install Pipenv using pip:
+6. Create a new virtual environment
     ```sh
-    pip install pipenv
-    ```
-      OR
+   python3.8 -m venv env
+   ```
+
+6. Activate the new virtual environment
     ```sh
-    pip3 install pipenv
-    ```
+   source env/bin/activate
+   ```
 
 5. Navigate to the project folder
     ```sh
     cd finalyearproject
     ```
 
-6. Activate a new virtual environment
-    ```sh
-   pipenv shell
-   ```
-
 7. Install required dependencies 
     ```sh
-   pipenv install
+   pip install -r requitments.txt
    ```
    
 8. Start the applciation
