@@ -9,37 +9,44 @@
 ## Set Up and Run
 
 1. Download and install Python 3.10 from <https://www.python.org/downloads/> and make sure to add Python to PATH if you are using Windows
+
 2. Clone or download the git repository
    [here](https://github.com/Nadeem-Abdelkader/finalYearProject.git).
     ```sh
     git clone https://github.com/Nadeem-Abdelkader/finalYearProject.git
     ```
+
 3. Navigate to the cloned local repository
     ```sh
     cd finalYearProject
     ```
 
-6. Create a new virtual environment
+4. Create a new virtual environment
     ```sh
    python3.8 -m venv env
    ```
 
-6. Activate the new virtual environment
+5. Activate the new virtual environment
     ```sh
    source env/bin/activate
    ```
 
-5. Navigate to the project folder
+6. Install required dependencies 
+    ```sh
+   pip install -r requirements.txt
+   ```
+   
+7. Navigate to the project folder
     ```sh
     cd finalyearproject
     ```
 
-7. Install required dependencies 
+8. Install required dependencies 
     ```sh
-   pip install -r requitments.txt
+   pip install -r requirements.txt
    ```
    
-8. Start the applciation
+9. Start the applciation
     ```sh
     python3 manage.py runserver
     ```
