@@ -23,7 +23,7 @@
 
 4. Create a new virtual environment
     ```sh
-   python3.8 -m venv env
+   python3 -m venv env
    ```
 
 5. Activate the new virtual environment
@@ -40,13 +40,18 @@
     ```sh
     cd finalyearproject
     ```
-
-8. Install required dependencies 
+   
+8. Make migrations
     ```sh
-   pip install -r requirements.txt
+   python3.8 manage.py makemigrations
    ```
    
-9. Start the applciation
+9. Apply migrations
+    ```sh
+   python3.8 manage.py migrate
+   ```
+
+10. Start the applciation
     ```sh
     python3 manage.py runserver
     ```
