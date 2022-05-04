@@ -43,12 +43,12 @@
    
 8. Make migrations
     ```sh
-   python3.8 manage.py makemigrations
+   python3 manage.py makemigrations
    ```
    
 9. Apply migrations
     ```sh
-   python3.8 manage.py migrate
+   python3 manage.py migrate
    ```
 
 10. Start the applciation
