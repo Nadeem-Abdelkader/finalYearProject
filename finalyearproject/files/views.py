@@ -72,10 +72,10 @@ def ml_model(image):
     # plt.imshow(thresh, 'gray')
     root_path = os.path.abspath(os.curdir)
     plt.imsave(
-        root_path + "/media/scans/segmented/" + image.name + "_segmented.png",
+        root_path + "/media/scans/segmented/" + image.name + "_segmented_scan.png",
         thresh)
     # plt.xticks([]), plt.yticks([])
     # plt.tight_layout()
     # plt.savefig("segmented_image.png")
 
-    return "/media/scans/segmented/" + image.name + "_segmented.png"
+    return "/media/scans/segmented/" + image.name + "_segmented_scan.png"
