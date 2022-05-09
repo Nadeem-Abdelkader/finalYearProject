@@ -36,10 +36,11 @@ def ml_model(image):
     save segmented image under /media/scans/segmented/ and return path to segmented image
     """
     submitted_image_path = image.image.url
-    print(submitted_image_path)
-    print(os.getcwd())
+    # print(image.name)
+    # print(submitted_image_path)
+    root_path = os.path.abspath(os.curdir)
     img = cv2.imread(
-        "/Users/nadeem/Documents/Monash/Monash Year 3 Semester 2/Computer Science Project 2/FYP/finalYearProject/finalyearproject" + submitted_image_path)
+        root_path + submitted_image_path)
     b, g, r = cv2.split(img)
 
     rgb_img = cv2.merge([r, g, b])
@@ -69,11 +70,12 @@ def ml_model(image):
     # plt.imshow(rgb_img)
     # plt.xticks([]), plt.yticks([])
     # plt.imshow(thresh, 'gray')
+    root_path = os.path.abspath(os.curdir)
     plt.imsave(
-        "/Users/nadeem/Documents/Monash/Monash Year 3 Semester 2/Computer Science Project 2/FYP/finalYearProject/finalyearproject/media/scans/segmented/segmented.png",
+        root_path + "/media/scans/segmented/" + image.name + "_segmented.png",
         thresh)
     # plt.xticks([]), plt.yticks([])
     # plt.tight_layout()
     # plt.savefig("segmented_image.png")
 
-    return "/media/scans/segmented/segmented.png"
+    return "/media/scans/segmented/" + image.name + "_segmented.png"
