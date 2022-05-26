@@ -22,24 +22,30 @@
     ```
 
 4. Create a new virtual environment
-    ```sh
-   python3 -m venv env
+   
+   MacOS and Linux
+   ```sh
+   pip install pipenv
    ```
-
-5. Activate the new virtual environment
-    ```sh
-   source env/bin/activate
-   ```
-
-6. Install required dependencies 
-    ```sh
-   pip install -r requirements.txt
+   Windows
+   ```sh
+   pip3 install pipenv
    ```
    
-7. Navigate to the project folder
+5. Navigate to the project folder
     ```sh
     cd finalyearproject
     ```
+    
+6. Activate the new virtual environment
+    ```sh
+   pipenv shell
+   ```
+
+7. Install required dependencies 
+    ```sh
+   pip install -r ../requirements.txt
+   ```
    
 8. Make migrations
     ```sh
@@ -55,3 +61,5 @@
     ```sh
     python3 manage.py runserver
     ```
+11. Navigate to localhost
+   - Visit http://127.0.0.1:8000/
