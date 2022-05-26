@@ -25,11 +25,11 @@
    
    MacOS and Linux
    ```sh
-   pip install pipenv
+   pip3 install pipenv
    ```
    Windows
    ```sh
-   pip3 install pipenv
+   pip install pipenv
    ```
    
 5. Navigate to the project folder
